@@ -1,0 +1,40 @@
+Title
+RTL Design of Finite State Machines (FSM) and Control Units
+
+Objective:
+To understand and implement Moore FSM, Mealy FSM, Traffic Light Controller, and Sequence Detector using Verilog HDL.
+
+Moore FSM
+States: S0, S1, S2
+Output depends only on state.
+State sequence:
+S0 → S1 → S2 → S0
+
+Mealy FSM
+Output depends on current state and input.
+Output becomes HIGH when input = 1 and state = S1.
+
+Traffic Light Controller
+States:
+State	Light
+S0	Red
+S1	Green
+S2	Yellow
+
+Sequence:
+Red → Green → Yellow → Red
+
+Sequence Detector
+Pattern:
+1011
+Detection output becomes HIGH when pattern is detected.
+
+Observations
+FSMs transition correctly with clock edges.
+Reset initializes all circuits.
+Traffic light sequence follows expected order.
+Sequence detector successfully detects 1011.
+Simulation waveforms verified functionality.
+
+Conclusion
+Task-4 provided practical experience in FSM-based RTL design, state transitions, pattern recognition, and verification through simulation.
